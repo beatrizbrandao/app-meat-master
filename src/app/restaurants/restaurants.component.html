@@ -1,0 +1,50 @@
+ <!-- INíCIO do CONTEÚDO -->
+ <section class="content-header">
+  <nav id="menu-h">
+    <ul>
+      <li>
+        <a>ffawfe</a>
+      </li>
+      <li> <a href="#">dvsv</a></li>
+    </ul>
+  </nav>
+
+  <h1 style="color: chocolate;">
+    TODAS RECEITAS
+  </h1>
+  
+</section>
+
+
+<section class="content">
+
+  <table>
+    <tr>
+      <td>
+  <ul class="list-group">
+    <li class="list-group-item" style=" width: 175px; margin-top: 10px; background-color:#fafafa ; font-size: 20px; color:chocolate;"><p>RECEITAS</p></li>
+    <li class="list-group-item" style=" width: 175px;">TORTA ALEMÃ</li>
+    <li class="list-group-item" style=" width: 175px;">BOLO IORGUTE</li>
+    <li class="list-group-item" style="width: 175px;">COSTELA</li>
+    <li class="list-group-item" style="width: 175px;">HAMBURGUER</li>
+    <li class="list-group-item" style=" width: 175px;">ARROZ DE FORNO</li>
+    <li class="list-group-item" style="width: 175px;">MOLHO BRANCO</li>
+    <li class="list-group-item" style="width: 175px;">CAPPUCINO</li>
+    <li class="list-group-item" style="width: 175px;">MILK SHAKE</li>
+    <li class="list-group-item" style="width: 175px;">BRIGADEIRÃO</li>
+    <li class="list-group-item" style="width: 175px;">PUDIM</li>
+  </ul>
+</td>
+<td>
+  <div class="row" style="margin-left:20px;">
+
+          <div class="col-sm-6 col-xs-12" *ngFor="let restaurant of restaurants">
+            <app-restaurant [restaurant]="restaurant"></app-restaurant>
+          </div>
+        </div>
+      </td>
+      </tr>
+  </table>    
+</section>
+
+<!-- FIM do CONTEÚDO -->
